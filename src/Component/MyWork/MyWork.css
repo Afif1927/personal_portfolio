@@ -1,0 +1,59 @@
+.mywork {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.mywork-title {
+  position: relative;
+}
+.mywork-title h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 60px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #6efaad;
+  position: relative;
+}
+.mywork-title h1::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  height: 4px;
+  width: 330px;
+  background: #4d4949;
+  border-radius: 2px;
+}
+.mywork-title h1::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -15px;
+  height: 4px;
+  width: 230px;
+  background: #6efaad;
+  border-radius: 50px;
+  z-index: 1;
+}
+.mywork-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+.mywork-container img {
+  transition: 0.3s;
+  width: 370px;
+  height: 240px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+.mywork-container img:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
