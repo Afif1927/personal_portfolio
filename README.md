@@ -3,7 +3,7 @@
 Welcome to my personal portfolio!   
 Here, I showcase my skills, projects, and professional experience as a web developer.
 
-##  Skills
+## 🚀 Skills
 - **Languages**: HTML, CSS, JavaScript, Python
 - **Frameworks**: React, Next.js, Bootstrap, Tailwind CSS
 - **Database**: MySQL
