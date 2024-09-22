@@ -3,6 +3,10 @@ import "./Contact.css"
 import mail_icon from '../../assets/mail_icon.svg'
 import location_icon from '../../assets/location_icon.svg'
 import call_icon from '../../assets/call_icon.svg'
+import LinkedIn_img from '../../assets/LinkedIn.png'
+import GitHub_img from '../../assets/github.png'
+import Skype_img from '../../assets/skype.png'
+import Gmail_img from '../../assets/Gmail.png'
 
 const Contact = () => {
    const onSubmit = async (event) => {
@@ -49,7 +53,16 @@ const Contact = () => {
                 <img src={location_icon} alt=''/> <p>Dhaka,Bangladesh</p>
              </div>
            </div>
-           
+           <div className="platform">
+            <p>Visit my social profile & get connected</p>
+            <div className="platforms">
+            <a href='https://www.linkedin.com/in/afif-muntasir-162960289/'><img src={LinkedIn_img}/></a>
+          <a href='' className='github' ><img src={GitHub_img}/></a>
+          <a href=''><img src={Skype_img}/></a>
+          <a href=''><img src={Gmail_img}/></a>
+            </div>
+          
+           </div>
         </div>
          <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor=''>Your Name</label>

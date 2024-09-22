@@ -1,12 +1,10 @@
-/* Hero.css */
-
 .hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 50px 100px;
   height: 100vh;
-  background-color: #000; /* Black background */
+  background-color: #000;
 }
 
 .hero-left {
@@ -15,41 +13,50 @@
 }
 
 .hero-left h1 {
-  font-size: 3rem;
-  color: #fff; /* White color for the main text */
-  line-height: 1.2;
-  margin-bottom: 20px;
+  font-size: 40px;
+  color: #fff;
+  line-height: 1.4;
+  margin-bottom: 40px;
 }
 
 .hero-left h1 span {
-  color: #6efaad; /* Parrot green for highlighted text */
+  font-size: 68px;
+  color: #6efaad;
 }
 
-.hero-left p {
-  font-size: 1.2rem;
-  color: #ccc; /* Light gray for paragraph text */
+.platforms {
+  display: flex;
+  align-items: center;
+  gap: 22px;
   margin-bottom: 30px;
 }
 
-.hero-action {
-  display: flex;
-  gap: 20px;
+.platforms img {
+  transition: transform 0.3s;
 }
 
-.hero-connect,
-.hero-resume {
-  padding: 10px 20px;
-  background-color: #6efaad; /* Parrot green background for buttons */
-  color: #000; /* Black text for better contrast */
+.platforms img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s;
+}
+
+.github img {
+  filter: invert(1);
+}
+
+.hero-connect {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #6efaad;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  color: black;
+  transition: 0.5s ease;
 }
 
-.hero-connect:hover,
-.hero-resume:hover {
-  background-color: #0bca4e; /* Darker shade of parrot green on hover */
+.hero-connect:hover {
+  transform: scale(1.1);
 }
 
 .hero-right {
@@ -65,38 +72,91 @@
 }
 
 .anchor-link {
-  color: inherit; /* Inherits text color */
+  color: inherit;
   text-decoration: none;
 }
 
-/* Responsive styling */
-@media (max-width: 1024px) {
+@media (max-width: 991px) {
   .hero {
     flex-direction: column;
-    text-align: center;
-    padding: 30px 50px;
+    justify-content: center;
+    padding: 20px;
   }
 
-  .hero-left {
-    max-width: 100%;
-  }
-
+  .hero-left,
   .hero-right {
-    max-width: 70%;
-    margin-top: 30px;
+    max-width: 90%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .hero-left h1 {
+    font-size: 30px;
+  }
+
+  .hero-left h1 span {
+    font-size: 50px;
+  }
+  .platforms {
+    justify-content: center;
+  }
+  .hero-right {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding: 15px;
+  }
+
   .hero-left h1 {
-    font-size: 2.5rem;
+    font-size: 28px;
   }
 
-  .hero-left p {
-    font-size: 1rem;
+  .hero-left h1 span {
+    font-size: 46px;
+  }
+}
+
+@media (max-width: 450px) {
+  .hero-left h1 {
+    font-size: 24px;
   }
 
-  .hero-right {
-    max-width: 90%;
+  .hero-left h1 span {
+    font-size: 40px;
+  }
+
+  .hero-right img {
+    width: 250px;
+    height: 300px;
+    margin-right: 0;
+  }
+  .platforms {
+    justify-content: center;
+  }
+  .platforms img {
+    width: 35px;
+    height: 35px;
+  }
+  .hero-connect {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 365px) {
+  .hero-left h1 {
+    font-size: 22px;
+  }
+
+  .hero-left h1 span {
+    font-size: 36px;
+  }
+
+  .hero-right img {
+    width: 200px;
+    height: 250px;
   }
 }

@@ -15,7 +15,7 @@ const Services = () => {
             <div className="service-font"> {typeof service.s_img === "object" && (
               <FontAwesomeIcon icon={service.s_img} size="2x" className='service-font-image'/>
             )}</div>
-           
+
             <h2>{service.s_name}</h2>
             <p>{service.s_desc}</p>
           </div>

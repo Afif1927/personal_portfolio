@@ -63,3 +63,25 @@
   gap: 30px;
   margin-bottom: 80px;
 }
+
+@media (max-width: 1200px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 991px) {
+  .skill-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .skill-title h1 {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 650px) {
+  .skill-container {
+    grid-template-columns: 1fr;
+  }
+}

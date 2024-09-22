@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   padding: 50px;
-  max-width: 1200px;
   margin: 0 auto;
 }
 .test {
@@ -102,4 +101,112 @@
 
 .resume-right {
   padding-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .resume {
+    margin: 50px 20px;
+    gap: 40px;
+  }
+
+  .resume-format {
+    flex-direction: column;
+    padding: 30px;
+    gap: 70px;
+  }
+
+  .resume-left,
+  .resume-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .resume-title h1 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+
+  .resume-format h1 {
+    font-size: 1.8rem;
+  }
+
+  .resume-format h3 {
+    font-size: 1.2rem;
+  }
+
+  .resume-format h4 {
+    font-size: 1rem;
+  }
+
+  .resume-format h5 {
+    font-size: 0.9rem;
+  }
+
+  .resume-format p {
+    font-size: 0.9rem;
+  }
+
+  .test img {
+    width: 40px;
+    height: 40px;
+  }
+}
+@media (max-width: 450px) {
+  .resume {
+    margin: 30px 10px;
+    gap: 20px;
+  }
+
+  .resume-title h1 {
+    font-size: 22px;
+  }
+
+  .resume-format {
+    padding: 20px;
+  }
+
+  .resume-left,
+  .resume-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .resume-format h1 {
+    font-size: 1.5rem;
+  }
+
+  .resume-format h3 {
+    font-size: 1rem;
+  }
+
+  .resume-format h4 {
+    font-size: 0.9rem;
+  }
+
+  .resume-format h5 {
+    font-size: 0.8rem;
+    margin-bottom: 5px;
+  }
+
+  .resume-format p {
+    font-size: 0.8rem;
+    line-height: 1.4;
+    margin-bottom: 10px;
+  }
+
+  .test img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .degree,
+  .knowledge {
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+
+  .degrees,
+  .knowledges {
+    gap: 15px;
+  }
 }

@@ -45,40 +45,73 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .navbar {
-    margin: 20px 50px;
+    padding: 28px 50px;
   }
+}
+@media (max-width: 768px) {
   .nav-mov-open {
     display: block;
-    position: fixed;
-    right: 30px;
     cursor: pointer;
+    width: 30px;
+    height: 30px;
   }
-  .nav-mov-close {
-    display: block;
-    position: relative;
-    top: 30px;
-    left: 290px;
-    width: 40px;
-    cursor: pointer;
-  }
+
   .nav-menu {
     position: fixed;
-    flex-direction: column;
-    align-items: start;
-    top: 0;
-    background-color: #1f0016;
-    width: 350px;
-    height: 100%;
-    z-index: 2;
-    transition: right 0.5s;
     right: -350px;
+    top: 0;
+    height: 100vh;
+    width: 300px;
+    background-color: black;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 100px;
+    gap: 30px;
+    transition: right 0.3s ease;
   }
-  .nav-menu li {
-    padding-left: 80px;
-    font-size: 30px;
-    flex-direction: row;
-    gap: 20px;
+
+  .anchor-link p {
+    font-size: 1.6rem;
+  }
+
+  .nav-mov-close {
+    display: block;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+}
+
+/* Smooth Scroll Offset Adjustment for Sticky Navbar */
+html {
+  scroll-behavior: smooth;
+}
+
+@media (max-width: 600px) {
+  .portfolio h1 {
+    font-size: 1.2rem;
+  }
+
+  .nav-menu {
+    width: 250px;
+  }
+
+  .nav-mov-open {
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav-mov-close {
+    width: 25px;
+    height: 25px;
+  }
+
+  .anchor-link p {
+    font-size: 1.4rem;
   }
 }
