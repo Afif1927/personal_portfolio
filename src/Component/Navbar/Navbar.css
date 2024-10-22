@@ -14,7 +14,9 @@
   left: 0;
   width: 100%;
   padding: 28px 100px;
-  background: #000;
+  backdrop-filter: blur(20px);
+  /* box-shadow: 10px 10px 10px #dddddd55,
+    -10px -10px 10px #111; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,15 +30,36 @@
   list-style: none;
   font-size: 20px;
 }
-.nav-menu li:hover {
-  color: #6efaad;
-}
-/* after adding react */
 
-.anchor-link {
+.navbar li .anchor-link {
   text-decoration: none;
   color: white;
 }
+
+.navbar li {
+  position: relative;
+  font: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+
+.navbar li:hover {
+  color: #050801 !important;
+  border-radius: 10px;
+  padding: 10px 10px;
+  background: #6efaad;
+  /* box-shadow: 0 0 5px #6efaad, 0 0 25px #6efaad,
+    0 0 50px #6efaad, 0 0 200px #6efaad; */
+  -webkit-box-reflect: below 1.5px
+    linear-gradient(transparent, #0005);
+}
+.navbar li .anchor-link:hover {
+  transition: 0.5s;
+  color: #050801 !important;
+  font-weight: 500;
+}
+
 /* after responsive */
 .nav-mov-close {
   display: none;
@@ -87,7 +110,6 @@
   }
 }
 
-/* Smooth Scroll Offset Adjustment for Sticky Navbar */
 html {
   scroll-behavior: smooth;
 }

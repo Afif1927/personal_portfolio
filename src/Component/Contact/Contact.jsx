@@ -7,6 +7,7 @@ import LinkedIn_img from '../../assets/LinkedIn.png'
 import GitHub_img from '../../assets/github.png'
 import Skype_img from '../../assets/skype.png'
 import Gmail_img from '../../assets/Gmail.png'
+import { motion } from 'framer-motion'
 
 const Contact = () => {
    const onSubmit = async (event) => {
@@ -39,7 +40,17 @@ const Contact = () => {
            
         </div>
         <div className="contact-section">
-        <div className="contact-left">
+        <motion.div 
+        className="contact-left"
+        initial={{opacity: 0, x:50}}
+        whileInView={{opacity:1, x:0}}
+        transition={{
+          duration: 0.8,
+          delay: 0.4,
+          ease: 'easeOut'
+        }}
+        viewport={{ once: false}}
+        >
            <h1>Let's talk</h1>
            <p>I'm currently avaliable to take on new projects, so feel free to send me a message about anything that you want me to work on. You can contact anytime.</p>
            <div className="contact-details">
@@ -63,8 +74,18 @@ const Contact = () => {
             </div>
           
            </div>
-        </div>
-         <form onSubmit={onSubmit} className="contact-right">
+        </motion.div>
+        <motion.div 
+          initial={{opacity: 0, x:-50}}
+          whileInView={{opacity:1, x:0}}
+          transition={{
+            duration: 0.6,
+            delay: 0.3,
+            ease: 'easeOut'
+          }}
+          viewport={{ once: false}}
+        >
+        <form onSubmit={onSubmit} className="contact-right">
             <label htmlFor=''>Your Name</label>
             <input type="text" placeholder='Enter your name' name='name'/>
             <label htmlFor=''>Your Email</label>
@@ -73,6 +94,7 @@ const Contact = () => {
             <textarea name='message' rows='8' placeholder='Enter your message'/>
             <button type='submit' className='contact-button'>Submit now</button>
          </form>
+        </motion.div>
         </div>
     </div>
   )

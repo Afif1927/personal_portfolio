@@ -23,7 +23,6 @@
 .resume-title h1 {
   text-align: center;
   font-size: 36px;
-  /* margin-bottom: 60px; */
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #6efaad;
@@ -35,8 +34,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
-  width: 260px;
+  height: 1px;
+  width: 200px;
   background: #4d4949;
   border-radius: 2px;
 }
@@ -46,8 +45,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
-  width: 180px;
+  height: 1px;
+  width: 100px;
   background: #6efaad;
   border-radius: 50px;
   z-index: 1;

@@ -24,8 +24,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
-  width: 260px;
+  height: 1px;
+  width: 270px;
   background: #4d4949;
   border-radius: 2px;
 }
@@ -35,8 +35,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
-  width: 180px;
+  height: 1px;
+  width: 140px;
   background: #6efaad;
   border-radius: 50px;
   z-index: 1;
@@ -120,6 +120,7 @@
   margin-bottom: 30px;
   cursor: pointer;
   transition: 0.5s ease;
+  font-weight: 600;
 }
 .contact-button:hover {
   transform: scale(1.1);

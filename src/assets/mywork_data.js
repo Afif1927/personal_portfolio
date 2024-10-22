@@ -10,16 +10,21 @@ const mywork_data = [
     w_no: 1,
     w_name: "Web design",
     w_img: project1_img,
+    w_link:
+      "https://saas-landing-page-lemon-nine.vercel.app",
   },
   {
     w_no: 2,
     w_name: "Web design",
     w_img: project2_img,
+    w_link: "https://ochi-web-omega.vercel.app/",
   },
   {
     w_no: 3,
     w_name: "Web design",
     w_img: project3_img,
+    w_link:
+      "https://reactmoviebrowser-cg15.vercel.app/",
   },
   {
     w_no: 4,

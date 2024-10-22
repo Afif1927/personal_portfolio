@@ -13,7 +13,7 @@ const Services_Data = [
     s_img: faCode,
     s_name: "Web Development",
     s_desc:
-      "I specialize in building full stack websites using the MERN stack (MongoDB, Express.js, React.js, and Node.js), a powerful and efficient combination of technologies.",
+      "I specialize in building user-friendly interfaces with React.js, focusing on clean design, smooth functionality, and optimized performance. Using tools like Tailwind CSS, I create efficient and engaging front-end applications.",
   },
   {
     s_img: faLaptop,

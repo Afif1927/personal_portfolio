@@ -21,7 +21,7 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
+  height: 1px;
   width: 260px;
   background: #4d4949;
   border-radius: 2px;
@@ -32,8 +32,8 @@
   left: 50%;
   transform: translateX(-50%);
   bottom: -15px;
-  height: 4px;
-  width: 180px;
+  height: 1px;
+  width: 120px;
   background: #6efaad;
   border-radius: 50px;
   z-index: 1;
