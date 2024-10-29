@@ -13,7 +13,7 @@ const Services_Data = [
     s_img: faCode,
     s_name: "Web Development",
     s_desc:
-      "I specialize in building user-friendly interfaces with React.js, focusing on clean design, smooth functionality, and optimized performance. Using tools like Tailwind CSS, I create efficient and engaging front-end applications.",
+      "I specialize in building user-friendly interfaces with Next.js, using its server-side rendering and static generation for optimal performance and SEO. With a focus on clean design and smooth functionality, I create efficient, scalable front-end applications using Tailwind CSS.",
   },
   {
     s_img: faLaptop,
