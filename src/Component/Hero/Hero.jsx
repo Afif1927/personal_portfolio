@@ -10,7 +10,7 @@ import Gmail_img from '../../assets/Gmail.png';
 
 const Hero = () => {
   const [currentText, setCurrentText] = useState(0);
-  const array = ["Front-End Developer", "ReactJS Developer"];
+  const array = ["Front-end Developer", "ReactJS Developer"];
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -38,7 +38,7 @@ const Hero = () => {
         </AnimatePresence>
 
         <div className="platforms">
-          <a href="https://www.linkedin.com/in/afif-muntasir-162960289/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.linkedin.com/in/md-afif1/" target="_blank" rel="noopener noreferrer">
             <img src={LinkedIn_img} alt="LinkedIn" />
           </a>
           <a href="https://github.com/Afif1927" className="github" target="_blank" rel="noopener noreferrer">

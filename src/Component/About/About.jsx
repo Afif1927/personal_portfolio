@@ -2,7 +2,6 @@ import React from 'react';
 import { motion } from 'framer-motion'; 
 import './About.css';
 import about_img from '../../assets/afifimg2.jpg';
-
 const About = () => {
   return (
     <div id='about' className='about'>
@@ -43,7 +42,7 @@ const About = () => {
               href="./public/AFIF'S RESUME .pdf"
               download = "AFIF'S RESUME .pdf"
             >
-              My Resume
+              Download CV
             </a>
           </div>
         </motion.div>

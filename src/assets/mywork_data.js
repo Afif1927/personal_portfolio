@@ -17,14 +17,14 @@ const mywork_data = [
     w_no: 2,
     w_name: "Web design",
     w_img: project2_img,
-    w_link: "https://ochi-web-omega.vercel.app/",
+    w_link: "https://code-arc-omega.vercel.app/",
   },
   {
     w_no: 3,
     w_name: "Web design",
     w_img: project3_img,
     w_link:
-      "https://reactmoviebrowser-cg15.vercel.app/",
+      "https://reactmoviebrowser.vercel.app/",
   },
   {
     w_no: 4,
