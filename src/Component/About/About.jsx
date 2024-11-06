@@ -39,8 +39,8 @@ const About = () => {
           <div className="about-resume">
             <a
               className="button"
-              href="./public/AFIF'S RESUME .pdf"
-              download = "AFIF'S RESUME .pdf"
+              href="./public/AFIF'S RESUME LATEST.pdf"
+              download = "AFIF'S RESUME LATEST.pdf"
             >
               Download CV
             </a>
