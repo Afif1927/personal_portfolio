@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
 import "./About.css";
-import resume from "../../assets/ResumeOfAFff.pdf";
+import resume from "../../assets/AfifResume.pdf";
 import about_img from "../../assets/afifimg2.jpg";
+
 const About = () => {
   return (
     <div
@@ -44,7 +45,7 @@ const About = () => {
           <p>
             I’m a skilled React developer with
             expertise in APIs, Tailwind CSS,
-            Node.js, and Framer Motion for
+            Next.js, and Framer Motion for
             animations. I specialize in building
             responsive front-end web applications
             using JavaScript, HTML, and CSS, with
@@ -75,7 +76,7 @@ const About = () => {
             <a
               className='button'
               href={resume}
-              download='ResumeOfAFff'
+              download='AfifResume'
             >
               Download CV
             </a>
